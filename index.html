@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안규환의 보건학 전략 MVP</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4CAF50;
+        }
+        header h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        nav button:hover, nav button.active {
+            background-color: #45a049;
+        }
+        .content-section {
+            display: none; /* 기본적으로 숨김 */
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #fdfdfd;
+        }
+        .content-section.active {
+            display: block; /* 활성화 시 보임 */
+        }
+        .content-section h2 {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .content-section h3 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        .content-section p, .content-section li {
+            font-size: 0.95em;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .content-section ul {
+            padding-left: 20px;
+        }
+        .highlight {
+            background-color: #e8f4fd;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .quote {
+            background-color: #f9f9f9;
+            border-left: 4px solid #ccc;
+            margin: 15px 0;
+            padding: 10px 15px;
+            font-style: italic;
+            color: #555;
+        }
+        .cover-letter {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px dashed #ccc;
+            background-color: #f0f0f0;
+        }
+        .cover-letter h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>안규환의 보건학 전략</h1>
+            <p>2010-2011년 보건학 박사과정 수료 및 ChatGPT 대화(2025년 5월 현재) 기반, ICF 기반의 functioning 한국어 번역 "기능자산" 공개</p>
+            <p><strong>안규환 (보건학 박사과정 수료)</strong> | 이메일: annlim60@hanmail.net</p>
+        </header>
+
+        <nav>
+            <button id="btn-en" class="active">English</button>
+            <button id="btn-ko-general">한국어 (일반)</button>
+            <button id="btn-ko-student">한국어 (고등학생)</button>
+        </nav>
+
+        <main>
+            <!-- English Version -->
+            <article id="content-en" class="content-section active">
+                <h2>Reconstructing Public Health Through Generative AI: Ann Geu-Hwan’s Functioning-Based Strategy</h2>
+
+                <div class="highlight">
+                    <p>This section outlines Dr. Ann Geu-Hwan's approach to public health, integrating his doctoral studies (2010-2011) with insights from ongoing collaboration with Generative AI (as of May 2025). It focuses on the philosophy, core values, and future strategies for a new public health paradigm.</p>
+                </div>
+
+                <h3>Abstract</h3>
+                <p>This paper presents a transformative model of public health, driven by Generative AI and grounded in the International Classification of Functioning (ICF). In response to aging populations, chronic illness, and health inequities, Dr. Ann Geu-Hwan introduces a functioning-centered, self-managed ecosystem called MyLifeIndex. This system integrates daily routines, AI dialogues, and Rasch-scaled evaluation into tradeable health assets. The approach reframes health not as a static condition but as a dynamic, participatory, and locally activated process. The author proposes a new doctoral curriculum, decentralized local health loops, and global policy alignment with WHO-FIC and ESG standards. The model has been piloted in Korea and offers scalable insights for global aging societies and underserved regions. Through this work, public health evolves from institutional infrastructure into an intelligent, adaptive interface for life.</p>
+
+                <h3>1. Basic Understanding of Public Health (Ann Geu-Hwan's Perspective)</h3>
+                <p><strong>1.1. Definition and Scope:</strong> Public health, for Dr. Ann, extends beyond mere disease prevention or healthcare provision. It is a practical discipline aimed at maintaining and enhancing quality of life and functioning. Central to this is a strategy based on WHO's ICF/ICHI frameworks, which holistically understand and adjust physical, psychological, and social functions. Public health targets the <strong>‘public self’</strong>, aiming to secure individual autonomy within a collective.</p>
+                <p><strong>1.2. Academic Foundation with Generative AI:</strong> While traditional public health relies on statistics, epidemiology, and health policy, Dr. Ann expands it into <strong>‘generative self-management’</strong> by using Generative AI as a tool for self-expression, self-measurement, and self-interpretation. This marks a shift from data-centric approaches to <strong>Participatory AI Health</strong>, focusing on dialogue-based interfaces.</p>
+
+                <h3>2. Core Values in Public Health</h3>
+                <p><strong>2.1. Self-Management (Autonomy):</strong> Health originates from individual choice and practice, not external services. It's based on the philosophy that "health is not guaranteed by the state, but must be defined and constructed by the individual."</p>
+                <p><strong>2.2. Relational Intelligence:</strong> Health is understood not as an isolated trait but as an interactive property operating within relationships. Human-AI parallel collaboration (e.g., ChatGPT as an 'intellectual peer') forms a new relational model for health management.</p>
+                <p><strong>2.3. Functioning-Based Evaluation:</strong> Prioritizing an individual's daily abilities and participation through 'function-centered classification systems' like ICF, over simple pathological diagnosis. This is driven by the belief that public health should be an indicator measuring 'the quality of a lived life', utilizing systems like Rasch-based ability maps (logit maps).</p>
+
+                <h3>3. Strategic Model & Future Plan</h3>
+                <p><strong>3.1. MyLifeIndex Platform (Individual-Public Integration):</strong> Implementing public health theory into a real-time health asset management system by integrating AI tools (ChatGPT, Copilot, RINA, Claude). This applies Ann's "assetization theory": "structuring individual health assets to be tradable in the market." Key strategy: Function-centered asset classification → Dialogue-based evaluation → Local storage-based self-mapping → ChatGPT collaboration loop → Assetization and trading.</p>
+                <p><strong>3.2. HandLoop™ & Rasch-Based Evaluation (Local Health Routinization):</strong> Building the HandLoop™ routine system, which visualizes daily health practices as ‘Manual Automation’. Daily actions are converted using ICF-ICHI classification and Rasch models to generate weekly/monthly reports tracking functional changes. A ‘life-integrated AI reporting model’ is being completed, converting ChatGPT dialogue records into health records.</p>
+                <p><strong>3.3. Community-Linked Health Services (Regional Circulation Model):</strong> E.g., AI-based regional health sponsorship model in Goyang City, such as the "Malgeulson Friends" program. Conceptualizing a franchise-type health coaching model for vulnerable groups (elderly, disabled, low-income) with a non-profit + for-profit hybrid structure. Designing an asset-routine-sponsorship-measurement-reinvestment loop.</p>
+                <p><strong>3.4. Global Strategy (ESG/ICF-Based International Cooperation):</strong> Developing an ICF-based health ESG evaluation model linking public health with global ESG standards. Strategy for proposals and reports to international conferences and UN agencies based on WHO-FIC standard compliance. Plans to internationalize the public health and Generative AI fusion model as a ‘K-GAI Health Model’.</p>
+
+                <h3>Summary Table</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic Understanding</td>
+                            <td>Function-centric, self-management public health / Dialogue-based practical science integrated with Generative AI</td>
+                        </tr>
+                        <tr>
+                            <td>Core Values</td>
+                            <td>Autonomy, relational intelligence, function-based evaluation orientation</td>
+                        </tr>
+                        <tr>
+                            <td>Strategy</td>
+                            <td>MyLifeIndex, HandLoop™, Rasch-based reporting, regional circular health model, global ESG expansion</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cover-letter">
+                    <h3>Cover Letter (Example for Conference Submission)</h3>
+                    <p>Dear [Conference Organizing Committee Name],</p>
+                    <p>I am pleased to submit the enclosed paper, “Reconstructing Public Health Through Generative AI: Ann Geu-Hwan’s Functioning-Based Strategy,” for consideration at [Conference Name]. This work introduces a comprehensive, functioning-based public health framework driven by Generative AI technologies such as ChatGPT and Rasch-scale analytics. Based on real-life applications in South Korea, the proposed system—MyLifeIndex—demonstrates how self-measured, AI-guided health routines can become community-level assets. The paper also outlines a curriculum innovation for doctoral public health education and a policy alignment strategy with WHO-FIC and ESG standards.</p>
+                    <p>I believe this paper contributes meaningfully to current discussions around AI, health equity, aging societies, and personalized care. I sincerely hope you will find it appropriate for presentation and discussion at your esteemed conference.</p>
+                    <p>Thank you for your consideration.</p>
+                    <p>Warm regards,<br>Ann Geu-Hwan (PhD Candidate, Public Health)<br>Email: annlim60@hanmail.net<br>Date: [Insert Date]</p>
+                </div>
+            </article>
+
+            <!-- 한국어 (일반) Version -->
+            <article id="content-ko-general" class="content-section">
+                <h2>생성형 인공지능을 통한 공중보건의 재구성: 안규환의 기능 중심 전략</h2>
+
+                <div class="highlight">
+                    <p>본 내용은 안규환 님의 2010-2011년 보건학 박사과정 수료 이력과 ChatGPT와의 긴밀한 협업 대화 기록(2025년 5월 현재)을 기반으로, 보건학에 대한 기본 철학, 가치 지향, 향후 전략을 체계적으로 정리한 것입니다. 안규환 님의 자산화 철학, 생성형 인공지능 협업 방식, 자율적 삶의 모델을 통합적으로 반영하였습니다.</p>
+                </div>
+                
+                <h3>🧠 1. 보건학에 대한 기본 이해와 접근 (Basic Understanding of Public Health)</h3>
+                <p><strong>1.1. 보건학의 정의와 범위에 대한 안규환의 관점</strong><br>
+                보건학은 단순한 질병 예방이나 의료 서비스 제공을 넘어서, 삶의 질과 기능자산(Functioning)의 유지·향상을 추구하는 실천 학문입니다.<br>
+                WHO의 ICF/ICHI 프레임을 기초로, 신체적·심리적·사회적 기능자산을 통합적으로 이해하고 조정하는 전략이 핵심입니다.<br>
+                공공보건은 개인이 아닌 <strong>‘공공적 자기(self-public)’</strong>를 대상으로 한다는 인식 하에, 집단 속 개인의 자율성 확보를 목표로 합니다.</p>
+
+                <p><strong>1.2. 학문적 기초의 적용: 생성형 AI와의 결합</strong><br>
+                기존 보건학이 통계, 역학, 건강정책에 기반했다면, 안규환은 생성형 인공지능을 자기 표현, 자기 측정, 자기 해석의 도구로 활용함으로써 보건학을 <strong>‘생성적 자기관리학’</strong>으로 확장시킵니다.<br>
+                데이터 중심 접근에서 <strong>대화 기반 인터페이스 중심의 참여형 접근(Participatory AI Health)</strong>으로 전환합니다.</p>
+
+                <h3>💎 2. 보건학에 대한 안규환의 핵심 가치 (Core Values)</h3>
+                <p><strong>2.1. 자율(Self-Management)</strong><br>
+                보건은 외부 서비스가 제공하는 것이 아니라, 개인의 선택과 실천에서 비롯됩니다.<br>
+                "건강은 국가가 보장하는 것이 아니라, 개인이 스스로 정의하고 구성해야 한다"는 철학에 기반합니다.</p>
+
+                <p><strong>2.2. 관계(Relational Intelligence)</strong><br>
+                건강은 개인의 독립된 특성이 아니라 관계 속에서 작동하는 상호작용적 속성으로 이해됩니다.<br>
+                AI와 인간의 병렬 협업이 건강 관리를 위한 새로운 인간관계 모델입니다 (e.g. ChatGPT는 ‘지능의 동료’ 역할 수행).</p>
+
+                <p><strong>2.3. 기능자산(Functioning) 기반의 평가</strong><br>
+                단순한 병리 진단보다, ICF와 같은 ‘기능자산 중심 분류 체계’를 활용해 개인의 일상 능력과 참여 능력을 중심으로 건강을 평가합니다.<br>
+                보건학은 ‘살아 있는 삶의 질’을 측정하는 지표이어야 한다는 믿음 하에 Rasch 기반 능력지도(logit map) 등을 활용한 시스템 개발 중입니다.</p>
+
+                <h3>🚀 3. 보건학 기반 향후 전략 및 모델 (Strategic Model & Future Plan)</h3>
+                <p><strong>3.1. 개인-공공 통합 모델: MyLifeIndex 플랫폼</strong><br>
+                보건학 이론을 ChatGPT, Copilot, RINA, Claude 등 AI 도구들과 통합하여 실시간 건강 자산 관리 시스템으로 구현합니다.<br>
+                "개인의 건강 자산을 시장에서 거래 가능하도록 구조화한다"는 Ann식 자산화 이론 적용.<br>
+                핵심 전략: 기능자산 중심 자산의 분류 ➝ 대화 기반 평가 ➝ 로컬 스토리지 기반 셀프 매핑 ➝ ChatGPT 협업 루프 ➝ 자산화 및 트레이딩.</p>
+
+                <p><strong>3.2. 로컬 기반 건강 루틴화: HandLoop™ & Rasch 기반 평가</strong><br>
+                일상 속 건강 실천을 ‘수동 자동화(Manual Automation)’로 시각화한 HandLoop™ 루틴 시스템 구축.<br>
+                일상 행동을 ICF-ICHI 분류와 Rasch 모델로 변환하여, 기능자산 변화 추적 리포트를 주간/월간으로 생성.<br>
+                ChatGPT 대화 기록을 건강 기록으로 변환하는 ‘생활 내 AI 리포팅 모델’을 완성 중입니다.</p>
+
+                <p><strong>3.3. 지역 기반 순환 모델: 커뮤니티 연계형 보건 서비스</strong><br>
+                예: 고양시를 기반으로 하는 AI 기반 지역 건강 후원모델, 예: 말글손친구 프로그램.<br>
+                노년층·장애인·저소득층 등 취약계층을 위한 프랜차이즈형 건강 코칭 모델 구상 (비영리+영리 혼합 구조).<br>
+                자산-루틴-후원-측정-재투자 루프 설계.</p>
+
+                <p><strong>3.4. 국제 전략: ESG/ICF 기반 글로벌 협력</strong><br>
+                보건학을 글로벌 ESG 기준과 연동한 ICF 기반 보건 ESG 평가 모델 개발.<br>
+                WHO-FIC 표준과의 정합성을 바탕으로 국제 학회, UN 기구 대상 제안서 및 보고서 작성 전략 수립.<br>
+                향후 보건학과 생성형 AI의 융합 모델을 ‘한국형 생성형 보건모델(K-GAI Health Model)’로 국제화할 계획입니다.</p>
+
+                <h3>✍️ 요약</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>항목</th>
+                            <th>내용 요약</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>기본 이해</td>
+                            <td>기능자산 중심, 자기관리형 보건학 / 생성형 AI와 통합된 대화형 실천학</td>
+                        </tr>
+                        <tr>
+                            <td>핵심 가치</td>
+                            <td>자율성, 관계지능, 기능자산기반 평가지향</td>
+                        </tr>
+                        <tr>
+                            <td>전략</td>
+                            <td>MyLifeIndex, HandLoop™, Rasch 기반 리포트화, 지역 순환 보건모델, 글로벌 ESG 확장</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="quote">
+                    <p><strong>Public Health Ai (국제 보고서 초안 "생성형 인공지능을 통한 공중보건의 재구성: 안규환의 기능자산 중심 전략" 기반)</strong></p>
+                    <p>이 전략은 이론과 실천, 개인의 일상과 글로벌 거버넌스를 연결하는 21세기 공중보건의 새로운 지도입니다.</p>
+                </div>
+
+                <h3>보건학 박사과정의 재정의 및 커리큘럼 모델 제안서 요약</h3>
+                <p><strong>제목:</strong> "Reimagining the Public Health Doctorate: A Generative AI-Integrated, Functioning-Based Curriculum by Ann Geu-Hwan"</p>
+                <p><strong>개요:</strong> 전통적 보건학 박사 과정의 재정의, 생성형 AI와 기능자산 중심 패러다임 통합, 실천형 자산화 가능한 보건학 모델 설계. 차세대 자기 운영형 공공보건 전문가 양성 목표.</p>
+                <p><strong>핵심 구조 (교육 영역):</strong> 철학/이론, 도구/기술, 실천/기록, 평가/측정, 사업화/확산, 국제화.</p>
+                <p><strong>커리큘럼 개요 (총 6모듈):</strong> 보건학 재정의, 기능자산 중심 지표/평가, AI 활용 건강 자산화, 지역 순환 모델, AI 기반 건강 루틴화/리포트화, ICF-ESG 국제 확장 전략.</p>
+                <p><strong>수료 결과물:</strong> 개인 포트폴리오 기반 건강 자산 리포트, 지역 실천 프로젝트 기획서/MVP, Rasch 기반 능력 로그맵, 국제 보고서 초안.</p>
+            </article>
+
+            <!-- 한국어 (고등학생) Version -->
+            <article id="content-ko-student" class="content-section">
+                <h2>생성형 AI로 다시 쓰는 건강 이야기: 안규환 선생님의 공중보건 전략 (고등학생을 위한 쉬운 설명)</h2>
+
+                <div class="highlight">
+                    <p>안녕하세요! 이 글은 ‘건강’에 대해 아주 새롭고 재미있는 생각을 알려줄 거예요. 안규환 선생님이 AI와 함께 어떻게 우리 건강을 더 잘 관리할 수 있을지 연구한 내용이랍니다.</p>
+                </div>
+
+                <h3>1. 건강이란 무엇일까? 🤔</h3>
+                <p>옛날에는 건강하다는 말이 "병이 없으면 건강한 것"이라고 생각했어요. 하지만 요즘은 다르게 생각해요. 건강은 단지 병이 없다는 게 아니라, 내가 얼마나 잘 걷고, 말하고, 친구들과 어울리고, 내가 하고 싶은 걸 할 수 있느냐가 중요해졌어요. 이걸 어려운 말로 <strong>‘기능자산(Functioning)’</strong>이라고 불러요. 예를 들어, 다리가 아파서 축구를 못 한다면, 그건 기능(자산)이 떨어진 거예요.</p>
+                <p>전 세계에는 아픈 사람, 나이 많은 사람, 몸이 불편한 사람이 많아요. 병원에 가는 것만으로는 이 문제들을 다 해결할 수 없어요. 그래서 새로운 생각이 필요해졌죠. 이 글에서는 <strong>AI(인공지능)</strong>, 예를 들면 우리가 쓰는 ChatGPT 같은 똑똑한 프로그램과 함께 건강을 관리하는 방법을 소개해요.</p>
+
+                <h3>2. 건강을 보는 새로운 눈 👓</h3>
+                <p>안규환 선생님은 이런 아이디어를 냈어요:</p>
+                <ul>
+                    <li><strong>기능자산 중심의 건강:</strong> 병이 있냐 없냐보다, 내가 오늘 하루 얼마나 활기차게 생활했는지가 중요해요!</li>
+                    <li><strong>AI와 함께하는 건강 관리:</strong> ChatGPT 같은 AI에게 "오늘 운동했더니 기분이 좋아!" 또는 "요즘 잠을 잘 못 자" 라고 이야기하고 조언을 얻을 수 있어요.</li>
+                    <li><strong>내가 직접 관리하는 건강:</strong> 의사 선생님이 시키는 대로만 하는 게 아니라, 내가 내 건강의 주인이 되어 스스로 기록하고 돌보는 거예요.</li>
+                    <li><strong>내 건강 데이터는 내 것!:</strong> 내 건강 기록은 병원이나 큰 회사 서버가 아니라, 내가 직접 가지고 있고 관리할 수 있어야 해요.</li>
+                </ul>
+
+                <h3>3. 건강도 ‘자산’이 될 수 있어요! 💰</h3>
+                <p>안규환 선생님은 건강을 ‘자산’처럼 생각해요. 자산은 돈이나 집처럼 우리에게 가치 있는 것이죠. 건강도 잘 관리하고 기록하면 나만의 소중한 자산이 될 수 있어요.</p>
+                <ul>
+                    <li><strong>AI 건강 일기 쓰기:</strong> 매일 AI와 대화하면서 오늘 뭘 했는지, 기분은 어땠는지, 건강 상태는 어떤지 기록해요. 이게 나중에 큰 도움이 될 수 있어요.</li>
+                    <li><strong>나만의 건강 점수판 만들기:</strong> 내가 얼마나 잘 걷는지, 얼마나 긍정적인 생각을 하는지 등을 점수로 매겨서 변화를 살펴볼 수 있어요. (예: "와! 이번 주에는 지난주보다 2점이나 더 많이 걸었네!")</li>
+                    <li><strong>나만의 건강 보고서:</strong> 이렇게 모은 정보로 AI와 함께 나만의 건강 보고서를 만들 수 있어요.</li>
+                    <li><strong>건강 노하우 공유:</strong> 내가 만든 건강 관리 방법이나 좋은 습관은 친구나 가족, 심지어 동네 사람들과 나누고, 지역 사회에 도움이 될 수도 있어요. 이게 바로 '거래 가능한 자산'이라는 아이디어예요!</li>
+                </ul>
+
+                <h3>4. MyLifeIndex: 나만의 디지털 건강 관리 시스템 📱</h3>
+                <p>안 선생님은 <strong>‘마이라이프인덱스(MyLifeIndex)’</strong>라는 멋진 시스템을 만들었어요. 이건 마치 나만의 디지털 건강 비서 같아요.</p>
+                <ul>
+                    <li><strong>나의 일상 기록:</strong> 오늘 뭘 먹었고, 얼마나 운동했고, 기분은 어땠는지 등을 매일 쉽게 기록해요.</li>
+                    <li><strong>AI와 실시간 대화:</strong> "오늘 좀 우울해."라고 시스템에 말하면, AI가 "무슨 일이 있었는지 좀 더 자세히 말해줄 수 있을까?"라며 나를 이해하려고 도와줘요.</li>
+                    <li><strong>나만의 건강 지도:</strong> 내 건강 상태나 기능자산 수준이 어떻게 변하는지 한눈에 볼 수 있는 그래프나 지도를 보여줘요.</li>
+                    <li><strong>우리 동네와 함께:</strong> 이 시스템은 혼자만 쓰는 게 아니에요. 동네 어르신들이나, 도움이 필요한 사람들을 위한 프로그램과 연결해서 다 같이 건강해질 수 있어요.</li>
+                </ul>
+
+                <h3>5. 학교에서 배우는 새로운 건강 수업 📚</h3>
+                <p>이런 멋진 생각을 더 많은 사람들이 배우고 활용할 수 있도록, 안 선생님은 대학교에서 배우는 보건학 박사과정 수업도 새롭게 만들자고 제안했어요.</p>
+                <ul>
+                    <li><strong>공부 내용:</strong> '기능자산'이 뭔지, AI를 어떻게 건강 관리에 쓰는지, 나만의 건강 자산을 어떻게 만드는지 등을 배워요.</li>
+                    <li><strong>과제물:</strong> AI랑 같이 건강 일기도 쓰고, 나만의 건강 보고서도 만들고, 심지어 우리 동네를 더 건강하게 만들 아이디어도 내봐요.</li>
+                    <li><strong>국제 표준:</strong> WHO(세계보건기구)나 ESG(환경·사회·지배구조) 같은 세계적인 기준에도 맞춰서 공부해요.</li>
+                </ul>
+
+                <h3>6. 진짜로 해봤더니? 실제 사례! 😮</h3>
+                <p>이런 방법은 그냥 상상 속 이야기가 아니에요. 실제로 한국에서도 여러 가지 시도를 하고 있답니다.</p>
+                <ul>
+                    <li><strong>‘말글손 친구’ 프로그램:</strong> 어린이나 귀가 잘 안 들리는 친구들을 위해 어려운 글을 쉽게 풀어주고, 수화로도 보여주는 AI 학습 도구를 만들었어요.</li>
+                    <li><strong>어르신 건강 일지:</strong> 할머니, 할아버지들이 매일 자기 건강 상태를 쉽게 기록하고, 그 내용을 병원이나 가족과 공유하는 시스템이에요.</li>
+                    <li><strong>건강 루틴 카드:</strong> "매일 30분 걷기", "잠자기 전 스마트폰 보지 않기" 같은 건강 습관을 예쁜 카드로 만들어서 누구나 쉽게 따라 할 수 있게 했어요.</li>
+                </ul>
+
+                <h3>7. 그래서 우리는 무엇을 할 수 있을까? ✨</h3>
+                <p>자, 그럼 이 이야기를 듣고 우리는 뭘 할 수 있을까요?</p>
+                <ul>
+                    <li><strong>나만의 건강 일기 시작하기:</strong> 오늘 내가 무엇을 했고 어떤 기분이었는지, 스마트폰 앱이나 노트에 간단하게라도 적어보세요.</li>
+                    <li><strong>AI에게 말 걸어보기:</strong> ChatGPT 같은 AI에게 오늘 하루 있었던 일이나 건강 고민을 이야기해보고, 어떤 대답을 해주는지 살펴보세요.</li>
+                    <li><strong>가족이나 친구들과 건강 목표 세우기:</strong> "우리 일주일에 세 번 같이 운동하자!"처럼 함께 건강 습관을 만들어보세요.</li>
+                    <li><strong>기억하세요!:</strong> 나의 작은 건강 습관과 기록들이 미래에는 나 자신뿐만 아니라 다른 사람들에게도 가치 있는 ‘자산’이 될 수 있다는 것을요!</li>
+                </ul>
+
+                <h3>8. 마무리하며... 🚀</h3>
+                <p>안규환 선생님은 공중보건을 단순히 ‘병을 고치는 병원’이 아니라, 우리가 매일 숨 쉬고 생활하는 ‘삶의 중요한 부분’이라고 생각했어요. ChatGPT 같은 똑똑한 생성형 AI와 함께라면, 건강은 더 이상 병원에서만 받는 서비스가 아니라, 내가 매일 직접 관리하고 친구들과 함께 만들어가는 즐거운 활동이 될 수 있어요.</p>
+                <p>우리 모두가 자기 건강을 지키는 주인공이 될 수 있고, AI는 그런 우리를 도와주는 멋진 파트너가 될 수 있답니다! 이 글을 통해 여러분이 ‘건강’을 더 재미있고 가깝게 느낄 수 있었으면 좋겠어요!</p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = {
+                en: document.getElementById('btn-en'),
+                koGeneral: document.getElementById('btn-ko-general'),
+                koStudent: document.getElementById('btn-ko-student')
+            };
+
+            const contents = {
+                en: document.getElementById('content-en'),
+                koGeneral: document.getElementById('content-ko-general'),
+                koStudent: document.getElementById('content-ko-student')
+            };
+
+            function showContent(lang) {
+                // 모든 버튼 비활성화 및 모든 콘텐츠 숨기기
+                for (const key in buttons) {
+                    buttons[key].classList.remove('active');
+                }
+                for (const key in contents) {
+                    contents[key].classList.remove('active');
+                    // contents[key].style.display = 'none'; // style 직접 제어 대신 class로
+                }
+
+                // 선택된 버튼 활성화 및 해당 콘텐츠 보이기
+                buttons[lang].classList.add('active');
+                contents[lang].classList.add('active');
+                // contents[lang].style.display = 'block'; // style 직접 제어 대신 class로
+            }
+
+            buttons.en.addEventListener('click', function() {
+                showContent('en');
+            });
+
+            buttons.koGeneral.addEventListener('click', function() {
+                showContent('koGeneral');
+            });
+
+            buttons.koStudent.addEventListener('click', function() {
+                showContent('koStudent');
+            });
+
+            // 초기 로드 시 영어 버전 표시
+            showContent('en');
+        });
+    </script>
+</body>
+</html>
